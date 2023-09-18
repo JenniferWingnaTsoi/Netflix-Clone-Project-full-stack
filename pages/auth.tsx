@@ -2,7 +2,6 @@ import Input from "@/components/input";
 import axios from "axios";
 import { useCallback, useState } from "react";
 import { signIn } from "next-auth/react";
-import { useRouter } from "next/router";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 
@@ -10,7 +9,7 @@ import { FaGithub } from "react-icons/fa";
 //Auth: 代表登錄頁面的整體結構
 // Input讓用戶輸入個人資料
 const Auth = () => {
-  const router = useRouter();
+
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
@@ -29,13 +28,12 @@ const Auth = () => {
         email,
         password,
         redirect: false,
-        callbackUrl: "/",
+        callbackUrl: "/profiles",
       });
-      router.push("/"); // redirect to the homepage :3000
     } catch (error) {
       console.log(error);
     }
-  }, [email, password, router]);
+  }, [email, password]);
 
   const register = useCallback(async () => {
     try {
@@ -105,7 +103,8 @@ const Auth = () => {
             </button>
 
             <div className="flex flex-row items-center gap-4 mt-8 justify-center">
-              <div onClick={() => signIn("google", { callbackUrl: "/" })}
+              <div
+                onClick={() => signIn("google", { callbackUrl: "/profiles" })}
                 className="
               w-10
               h-10
@@ -122,7 +121,7 @@ const Auth = () => {
               </div>
 
               <div
-                onClick={() => signIn("github", { callbackUrl: "/" })}
+                onClick={() => signIn("github", { callbackUrl: "/profiles" })}
                 className="
               w-10
               h-10
