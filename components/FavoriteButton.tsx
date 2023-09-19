@@ -1,66 +1,52 @@
-import axios from "axios";
-import React,{useCallback,useMemo} from "react";
-import {AiOutlinePlus,AiOutlineCheck} from 'react-icons/ai'
+import axios from 'axios';
+import React, { useCallback, useMemo } from 'react';
+import { PlusIcon, CheckIcon } from '@heroicons/react/24/outline';
 
-import useCurrentUser from "@/hooks/useCurrentUser";
-import useFavourites from "@/hooks/useFavorites"
+import useCurrentUser from '@/hooks/useCurrentUser';
+import useFavorites from '@/hooks/useFavorites';
 
-
-interface FavoriteButtonProps{
-    movieId:string
+interface FavoriteButtonProps {
+  movieId: string
 }
 
-const FavouriteButton:React.FC<FavoriteButtonProps>=({movieId})=>{
-    const {mutate:mutateFavorites} = useFavourites();
-    const{data: currentUser,mutate} = useCurrentUser();
+const FavoriteButton: React.FC<FavoriteButtonProps> = ({ movieId }) => {
+  const { mutate: mutateFavorites } = useFavorites();
 
-    const isFavorite = useMemo(()=>{
-        const list = currentUser?.favoriteIds || []
-        
-        return list.includes(movieId);
-    },[currentUser,movieId])
+  const { data: currentUser, mutate } = useCurrentUser();
 
-    const toggleFavorites = useCallback(async()=>{
-        let response;
+  const isFavorite = useMemo(() => {
+    const list = currentUser?.favoriteIds || [];
 
-        if(isFavorite){
-            response = await axios.delete('/api/favorite',{data:{movieId}})
-        } else{
-            response = await axios.post('/api/favorites',{movieId})
-        }
-        const updatedFavortesIds = response?.data?.favoriteIds;
+    return list.includes(movieId);
+  }, [currentUser, movieId]);
 
-        mutate({
-            ...currentUser,
-            favoriteIds:updatedFavortesIds
-        })
+  const toggleFavorites = useCallback(async () => {
+    let response;
 
-        mutateFavorites()
-    },[movieId,isFavorite,currentUser,mutate,mutateFavorites])
+    if (isFavorite) {
+      response = await axios.delete('/api/favorite', { data: { movieId } });
+    } else {
+      response = await axios.post('/api/favorite', { movieId });
+    }
 
-    const Icon = isFavorite ? AiOutlineCheck:AiOutlinePlus
+    const updatedFavoriteIds = response?.data?.favoriteIds;
 
-    return(
-        <div onClick={toggleFavorites} 
-        className="
-        cursor-pointer
-        group/item
-        w-6
-        h-6
-        lg:w-10
-        lg:h-10
-        vorder-white
-        border-2
-        rounded-full
-        flex
-        justify-center
-        items-center
-        transition
-        hover:border-netural-300
-        ">
-            <Icon on className="text-white" size={30} />
+    mutate({ 
+      ...currentUser, 
+      favoriteIds: updatedFavoriteIds,
+    });
+    mutateFavorites();
+  }, [movieId, isFavorite, currentUser, mutate, mutateFavorites]);
+  
+  const Icon = isFavorite ? CheckIcon : PlusIcon;
 
-        </div>
-    )
+  const iconBox:string = "cursor-pointer group/item w-6 h-6 lg:w-10 lg:h-10 border-white border-2 rounded-full flex justify-center items-center transition hover:border-neutral-300"
+  const iconButton:string = "text-white group-hover/item:text-neutral-300 w-4 lg:w-6"
+  return (
+    <div onClick={toggleFavorites} className={iconBox}>
+      <Icon className={iconButton} />
+    </div>
+  )
 }
-export default FavouriteButton;
+
+export default FavoriteButton;

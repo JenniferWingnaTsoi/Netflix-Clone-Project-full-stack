@@ -1,82 +1,45 @@
-import useBillboard from "@/hooks/useBillboard";
 import React, { useCallback } from "react";
-import { BsInfoCircle } from "react-icons/bs";
-import PlayButton from "./PlayButton";
-import useInfoModal from "@/hooks/useInfoModal";
+import { InformationCircleIcon } from "@heroicons/react/24/outline";
 
-const Billboard = () => {
+import PlayButton from "@/components/PlayButton";
+import useBillboard from "@/hooks/useBillboard";
+import useInfoModalStore from "@/hooks/useInfoModal";
+
+const Billboard: React.FC = () => {
+  const { openModal } = useInfoModalStore();
   const { data } = useBillboard();
-  const { openModal } = useInfoModal();
   const handleOpenModal = useCallback(() => {
     openModal(data?.id);
-  },[openModal,data?.id]);
+  }, [openModal, data?.id]);
+
+  
+  //styles
+  const movieBox: string = "relative h-[56.25vw]";
+  const movieVideo: string ="w-full h-[56.25vw] object-cover brightness-[60%] transition duration-500";
+  const infoBox: string = "absolute top-[30%] md:top-[40%] ml-4 md:ml-16";
+  const playButtonBox: string = "flex flex-row items-center mt-3 md:mt-4 gap-3";
+  const movieTitle: string = "text-white text-1xl md:text-5xl h-full w-[50%] lg:text-6xl font-bold drop-shadow-xl";
+  const movieDesc: string = "text-white text-[8px] md:text-lg mt-3 md:mt-8 w-[90%] md:w-[80%] lg:w-[50%] drop-shadow-xl";
+  const playButton: string = "bg-white text-white bg-opacity-30 rounded-md py-1 md:py-2 px-2 md:px-4 w-auto text-xs lg:text-lg font-semibold flex flex-row items-center hover:bg-opacity-20 transition";
+  const infoIcon: string = "w-4 md:w-7 mr-1";
+
   return (
-    <div className="relative h-[56.25vw]">
+    <div className={movieBox}>
       <video
-        className="
-          w-full
-          h-[56.25vw]
-          object-cover
-          brightness-[60%]
-        "
+        poster={data?.thumbnailUrl}
+        className={movieVideo}
         autoPlay
         muted
         loop
-        poster={data?.thumbnailUrl}
         src={data?.videoUrl}
       ></video>
-      <div className="absolute top-[50%] md:top-[50%] left-4 md:left-16 -translate-y-1/2">
-        <p
-          className="
-          text-white 
-          text-1xl 
-          md:text-5xl 
-          w-[50%] 
-          lg:text-6xl 
-          font-bold 
-          drop-shadow-xl
-        "
-        >
-          {data?.title}
-        </p>
-        <p
-          className="
-          text-white
-          text-[8px]
-          md:text-lg
-          mt-3
-          md:mt-8
-          w-[90%]
-          md:w-[80%]
-          lg:w-[50%]
-          drop-shadow-xl
-        "
-        >
-          {data?.description}
-        </p>
-        <div className="flex flex-row items-center mt-3 md:mt-4 gap-3">
+      <div className={infoBox}>
+        <p className={movieTitle}>{data?.title}</p>
+        <p className={movieDesc}>{data?.description}</p>
+        <div className={playButtonBox}>
           <PlayButton movieId={data?.id} />
-          <button
-            onClick={handleOpenModal}
-            className="
-          bg-white
-          text-white
-          bg-opacity-30
-          rounded-md
-          py-1 md:py-2
-          px-2 md:px-4
-          w-auto
-          text-xs lg:text-lg
-          font-semibold
-          flex
-          flex-row
-          items-center
-          hover:bg-opacity-20
-          transition
-
-          "
-          >
-            <BsInfoCircle className="mr-1" />
+          <button onClick={handleOpenModal} className={playButton}>
+            <InformationCircleIcon className={infoIcon} />
             More Info
           </button>
         </div>
@@ -84,5 +47,4 @@ const Billboard = () => {
     </div>
   );
 };
-
 export default Billboard;
