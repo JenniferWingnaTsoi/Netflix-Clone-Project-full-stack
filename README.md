@@ -1,10 +1,17 @@
-# Project Title
-- **Fullstack Netflix Webpage Clone**
-  - Briefly describe the project in a few sentences, highlighting its main purpose and goals.
+# Fullstack Netflix Webpage Clone
+## Preview
+<img width="1119" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/cc8f59e5-574b-4c92-b2c2-1a9dbcfb3f48">
+<img width="1099" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/989525d3-e870-40d7-9683-d486c86d8573">
+<img width="624" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/425c77e0-40d0-45d5-b7eb-6f2319522c7a">
+<img width="1103" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/f1a03e17-1df3-4422-b2dc-a8a649d997ec">
+<img width="1089" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/fb93c95e-9f67-4c90-bf39-eadc47ec08e8">
+
+
+
+
 
 ## Project URL
-- [Link to the Deployed Project](https://netflix-clone-project-5syh4t5p7-jenniferwingna-gmailcom.vercel.app)
-  - Provide a direct link to your deployed project for easy access.
+- https://netflix-clone-project-5syh4t5p7-jenniferwingna-gmailcom.vercel.app
 
 ## Table of Contents
 - [Introduction](#introduction)
