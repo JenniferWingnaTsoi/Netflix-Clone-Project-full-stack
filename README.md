@@ -31,19 +31,6 @@
 - https://netflix-clone-project-5syh4t5p7-jenniferwingna-gmailcom.vercel.app
 - Sign up for first time!
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Screenshots](#screenshots)
-- [Skills Demonstrated](#skills-demonstrated)
-- [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Introduction
 - Provide a brief introduction to the project's purpose, its significance, and any challenges or goals you aimed to address during the internship.
 
@@ -59,13 +46,36 @@
     - Hosting: Vercel
 
 ## Installation
-- Provide instructions on how to set up the project locally, including any prerequisites and steps needed to run it on the local development environment. Be clear and concise.
-  - Example:
-    1. Clone the repository: `git clone https://github.com/yourusername/netflix-clone.git`
-    2. Navigate to the project folder: `cd netflix-clone`
-    3. Install dependencies: `npm install`
-    4. Start the development server: `npm run dev`
-    5. Open the project in your browser: `http://localhost:3000`
+  1. Clone the repository:
+     ```
+     git clone [https://github.com/yourusername/netflix-clone.git](https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack.git)
+     ```
+  2. Navigate to the project folder:
+     ```
+     cd netflix-clone
+     ```
+  3. Install dependencies:
+     ```
+     npm install
+     ```
+  4. Set up .env files as the fellowing:
+     ```
+      DATABASE_URL=
+      GOOGLE_CLIENT_ID=
+      GOOGLE_CLIENT_SECRET=
+      GITHUB_ID=
+      GITHUB_SECRET=
+      NEXTAUTH_JWT_SECRET=
+      NEXTAUTH_SECRET=
+     ```
+  6. Start the development server:
+     ```
+     npm run dev
+     ```
+  8. Open the project in your browser:
+     ```
+     http://localhost:3000
+     ```
 
 ## Usage
 - Describe how users can interact with your Netflix clone. Include any specific usage instructions, user roles, or important functionalities to highlight.
