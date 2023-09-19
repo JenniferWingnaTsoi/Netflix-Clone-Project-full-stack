@@ -1,4 +1,6 @@
 # Fullstack Netflix Webpage Clone
+## Introduction
+
 ## Preview
 ### Sign In Page
 <img width="1119" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/cc8f59e5-574b-4c92-b2c2-1a9dbcfb3f48">
@@ -29,9 +31,6 @@
 
 
 
-
-
-
 ## Project URL
 - https://netflix-clone-project-5syh4t5p7-jenniferwingna-gmailcom.vercel.app
 - Sign up for first time!
@@ -42,13 +41,21 @@
 ## Features
 - List the main features of your Netflix clone project. What can users do with it? What functionalities have you implemented?
 
-## Technologies Used
-- Detail the key technologies, frameworks, and libraries you utilized in the project. This can include languages, databases, front-end and back-end tools, and deployment platforms.
-  - Example:
+## Framework
     - Front-end: React, Next.js, TailwindCSS
-    - Back-end: Node.js
-    - Database: MongoDB, Prisma
+    - Back-end: Prisma, Next.js
+    - Database: MongoDB
     - Hosting: Vercel
+
+## Skills Demonstrated
+- List and briefly describe the skills and knowledge you demonstrated while working on this project. This can include coding languages, design principles, problem-solving, and teamwork.
+  - Example:
+    - Developed responsive user interfaces using React and TailwindCSS.
+    - Implemented user authentication and data storage with MongoDB and Prisma.
+    - Collaborated with a team to deploy the project on Vercel.
+
+## Project structure
+
 
 ## Installation
   1. Clone the repository:
@@ -81,40 +88,3 @@
      ```
      http://localhost:3000
      ```
-
-## Usage
-- Describe how users can interact with your Netflix clone. Include any specific usage instructions, user roles, or important functionalities to highlight.
-
-## Project Structure
-- Provide an overview of the project's directory structure. You can use the `tree` command or simply describe the structure in text.
-  - Example:
-    ```
-    .
-    ├── public/
-    ├── src/
-    │   ├── components/
-    │   ├── pages/
-    │   ├── ...
-    ├── package.json
-    ├── README.md
-    └── ...
-    ```
-
-## Screenshots
-- Include screenshots or images of your project's UI to give interviewers a visual representation of your work.
-
-## Skills Demonstrated
-- List and briefly describe the skills and knowledge you demonstrated while working on this project. This can include coding languages, design principles, problem-solving, and teamwork.
-  - Example:
-    - Developed responsive user interfaces using React and TailwindCSS.
-    - Implemented user authentication and data storage with MongoDB and Prisma.
-    - Collaborated with a team to deploy the project on Vercel.
-
-## Future Enhancements
-- Mention any future improvements or features you'd like to add to the project if given more time or resources.
-
-## Contributing
-- If applicable, explain how others can contribute to your project or provide links to your project's GitHub repository.
-
-## License
-- Include any licensing information or copyright details for your project.
