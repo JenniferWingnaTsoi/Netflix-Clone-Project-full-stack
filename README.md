@@ -1,10 +1,27 @@
 # Fullstack Netflix Webpage Clone
 ## Preview
+### Sign In Page
 <img width="1119" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/cc8f59e5-574b-4c92-b2c2-1a9dbcfb3f48">
+
+### Register
 <img width="1099" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/989525d3-e870-40d7-9683-d486c86d8573">
 <img width="624" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/425c77e0-40d0-45d5-b7eb-6f2319522c7a">
 <img width="1103" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/f1a03e17-1df3-4422-b2dc-a8a649d997ec">
+
+### Account menu
+<img width="193" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/4a53aad9-38ef-4067-ab67-db3c7f490ee6">
 <img width="1089" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/fb93c95e-9f67-4c90-bf39-eadc47ec08e8">
+
+### Info of movies
+<img width="674" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/c44e2ea7-dc99-4807-a8fe-8526e22d32d0">
+
+### Watch full movie
+<img width="1096" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/80d7bd69-378e-46ff-9918-5e42de24df15">
+
+
+### Create favorite movie list
+<img width="810" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/17764340-d006-44aa-9724-ee8373a5b423">
+
 
 
 
@@ -12,6 +29,7 @@
 
 ## Project URL
 - https://netflix-clone-project-5syh4t5p7-jenniferwingna-gmailcom.vercel.app
+- Sign up for first time!
 
 ## Table of Contents
 - [Introduction](#introduction)
