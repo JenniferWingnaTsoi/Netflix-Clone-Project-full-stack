@@ -5,11 +5,16 @@
 
 ### Register
 <img width="1099" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/989525d3-e870-40d7-9683-d486c86d8573">
+
+### User page
 <img width="624" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/425c77e0-40d0-45d5-b7eb-6f2319522c7a">
-<img width="1103" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/f1a03e17-1df3-4422-b2dc-a8a649d997ec">
 
 ### Account menu
 <img width="193" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/4a53aad9-38ef-4067-ab67-db3c7f490ee6">
+
+### Home page
+<img width="1103" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/f1a03e17-1df3-4422-b2dc-a8a649d997ec">
+
 <img width="1089" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/fb93c95e-9f67-4c90-bf39-eadc47ec08e8">
 
 ### Info of movies
