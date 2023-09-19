@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { XMarkIcon } from '@heroicons/react/24/outline';
+import { AiOutlineCloseCircle } from 'react-icons/ai'
 
 import PlayButton from '@/components/PlayButton';
 import FavoriteButton from '@/components/FavoriteButton';
@@ -57,7 +57,7 @@ const InfoModal: React.FC<InfoModalProps> = ({ visible, onClose }) => {
           <div className={infoBoxSize}>
             <video poster={data?.thumbnailUrl} autoPlay muted loop src={data?.videoUrl} className={videoSetting} />
             <div onClick={handleClose} className={closeButton}>
-              <XMarkIcon className="text-white w-6" />
+              <AiOutlineCloseCircle size={30} className="text-white w-6" />
             </div>
             <div className={titleBox}>
               <p className={title}>

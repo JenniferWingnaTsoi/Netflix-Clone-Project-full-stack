@@ -1,7 +1,6 @@
 import React, { useCallback } from 'react';
 import { useRouter } from 'next/router';
-import { ChevronDownIcon } from '@heroicons/react/24/outline';
-import { PlayIcon } from '@heroicons/react/24/solid';
+import { BsChevronDown,BsFillPlayFill } from 'react-icons/bs'
 
 import FavoriteButton from '@/components/FavoriteButton';
 import useInfoModalStore from '@/hooks/useInfoModal';
@@ -52,12 +51,12 @@ const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
         <div className={infoBox}>
           <div className={actionBox}>
             <div onClick={redirectToWatch} className={watchBox}>
-              <PlayIcon className={playButton}/>
+              <BsFillPlayFill size={30} className={playButton}/>
             </div>
             
             <FavoriteButton movieId={data.id} />
             <div onClick={() => openModal(data?.id)} className={chevDownBox}>
-              <ChevronDownIcon className= {chevDownIcon} />
+              <BsChevronDown className= {chevDownIcon} />
             </div>
           </div>
           <p className={status}>

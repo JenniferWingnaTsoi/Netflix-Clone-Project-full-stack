@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeftIcon } from '@heroicons/react/24/outline';
+import { AiOutlineArrowLeft } from 'react-icons/ai'
 import { useRouter } from 'next/router';
 import useMovie from '@/hooks/useMovie';
 
@@ -19,7 +19,7 @@ const Watch = () => {
   return (
     <div className={watchBox}>
       <nav className={navBarBox}>
-        <ArrowLeftIcon onClick={() => router.push('/')} className={backToHomwIcon}/>
+        <AiOutlineArrowLeft size={30} onClick={() => router.push('/')} className={backToHomwIcon}/>
         <p className={movieTitle}>
           <span className="font-light">Watching:</span> {data?.title}
         </p>

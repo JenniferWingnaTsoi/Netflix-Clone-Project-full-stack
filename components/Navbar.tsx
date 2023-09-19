@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { BellIcon, MagnifyingGlassIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
+import { AiFillBell, AiOutlineSearch } from 'react-icons/ai'
+import { BsChevronCompactDown } from 'react-icons/bs';
 
 import AccountMenu from '@/components/AccountMenu';
 import MobileMenu from '@/components/MobileMenu';
@@ -63,21 +64,21 @@ const Navbar = () => {
         </div>
         <div onClick={toggleMobileMenu} className={navBarInSmallScr}>
           <p className="text-white text-sm">Browse</p>
-          <ChevronDownIcon className={chevDownMobMenuIcon} />
+          <BsChevronCompactDown className={chevDownMobMenuIcon} />
           <MobileMenu visible={showMobileMenu} />
         </div>
         <div className={functionBar}>
           <div className={searchBox}>
-            <MagnifyingGlassIcon className="w-6" />
+            <AiOutlineSearch size={30} className="w-6" />
           </div>
           <div className={notifyBox}>
-            <BellIcon className="w-6" />
+            <AiFillBell size={30} className="w-6" />
           </div>
           <div onClick={toggleAccountMenu} className={accountMenu}>
             <div className={userIcon}>
               <img src="/images/default-blue.png" alt="" />
             </div>
-            <ChevronDownIcon className={chevDownAccMenuIcon} />
+            <BsChevronCompactDown size={30} className={chevDownAccMenuIcon} />
             <AccountMenu visible={showAccountMenu} />
           </div>
         </div>
