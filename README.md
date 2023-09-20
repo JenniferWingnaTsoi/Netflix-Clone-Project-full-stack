@@ -74,6 +74,14 @@ This project is a Netflix webpage clone that replicates the popular streaming pl
 - Hosting: Vercel
   
 ## Project structure
+<div align="center">
+  
+|components| libs | hooks| pages |
+|----------|----------|----------|----------|
+| <img width="110" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/ed5473ef-ae11-451f-a951-8a4a98b7e32c">| <img width="93" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/4a535694-234b-498f-96ab-5037bdc9e6c5">|<img width="107" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/919ad437-d27a-4f40-9c9b-233a9761499b">| <img width="141" alt="image" src="https://github.com/JenniferWingnaTsoi/Netflix-Clone-Project-full-stack/assets/139680820/0bd55dd8-f1d4-4f8f-a190-2cae0c9f068a">|
+
+</div>
+
 
 
 
